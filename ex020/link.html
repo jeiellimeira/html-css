@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando links</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+a:link{
+        color: blue;
+        text-decoration: none;
+        font-weight: bold;
+       }
+    a:visited {
+    color: blueviolet;
+  }
+  a:hover{
+    color: black;
+    text-decoration: underline;
+  }
+  a:active{
+    color: yellow;
+  }
+
+
+a::before{
+    content: '►';
+    color: lightgray;
+}
+
+
+
+ a::after{
+    content: '◄';
+    text-decoration: none;
+    font-weight: normal;
+    color: darkgray;
+ }
+
+ .especial{
+    background-color: red;
+ }
+.especial::before{
+    background-color: '►' ;
+}
+.especial::after{
+    background-color: '◄';
+}
+</style>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a target="_blank" href="https://github.com/jeiellimeira">Perfil do Github</a></li>
+        <li><a   target="_blank" href="https://www.youtube.com/channel/UCbrG7PoxQOZhRmj8ptWavow">Canal do Youtube</a></li>
+        <li><a  target="_blank" href="https://www.linkedin.com/in/jeiel-limeira-2a8a8625b/">Linkedin</a></li>
+    </ul>
+</body>
+</html>

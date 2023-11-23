@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=deviceb  -width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: dimgray;
+    }
+    header{
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+    }
+    article{
+        background-color: lightgray;
+    }
+    article>aside{
+        background-color: rgb(165,165,165);
+    }
+    main{
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 33px;
+    }
+    footer{
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 4px;
+        margin: 0px;
+    }
+    
+    footer > p {
+        margin: 0px;
+    }
+    
+    nav{
+        background-color: rgb(102,102,102);
+        padding: 3px;
+        
+    }
+    nav>a{
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        box-shadow:2px 2px 4px 1px black ;
+    }
+
+    nav>a{
+        text-decoration: underline;
+        color: white;
+        font-weight: bold;
+        margin-right: 30px;
+    }
+    nav > a:hover{
+         text-decoration: none;
+    }
+</style>
+<body>
+  <header>
+    <h1>meu site</h1>
+    <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="assuntos">
+        <p>esporte, noticia, tecnologia</p>
+
+    </section>
+    <section id="noticias">
+        <article>
+           <h2> noticia sobre o brasil </h2>
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eaque repellendus pariatur ex quasi! Magnam quae, quo vero qui at, nobis deserunt commodi eveniet vitae placeat sapiente soluta voluptates suscipit.</p>
+            <aside>
+                <p>artigo escrito por josé da silva</p>
+                    </aside>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <p>desenvolvido por jejê</p>
+        </footer>
+    </body>
+</html>
