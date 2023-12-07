@@ -5,6 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tables</title>
 </head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif
+    }
+    
+    table {
+        border-collapse:collapse;
+        width:400px;
+        border: 5px solid red;
+    }
+
+    td{
+        border: 1px solid black;
+        padding: 8px;
+    }
+    tr.linha{
+        background-color: gray;
+    }
+    td.stack{
+        background-color: yellow;
+    }
+
+    td.dado{
+
+    }
+</style>
 
 <body>
     <h1>Minha Primeira tabela</h1>
@@ -19,9 +45,9 @@
             <tr>
                 <td>A1</td>
                 <td>B1</td>
-                <td>C1</td>
+                <td class="dado">C1</td>
             </tr>
-            <tr>
+            <tr class="linha">
                 <td>A2</td>
                 <td>B2</td>
                 <td>C3</td>
@@ -35,9 +61,9 @@
 
             <tr>
                 <td>A4</td>
-                <td>B4</td>
+                <td class="stack">B4</td>
                 <td>C4<td>
-            </tr>
+                </tr>
         </table>
     </body>
 
