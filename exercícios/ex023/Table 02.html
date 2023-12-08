@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body{
+        width: 500px;
+    }
+
+    table{
+        width: 500px;
+    }
+
+    td{
+        border: 1px solid black;
+    }
+
+    td, th{
+        border: 1px solid black;
+        padding: 10px;
+    }
+
+    thead{
+        background-color: gray;
+    }
+
+    tfoot{
+        background-color: gray;
+        color: white;
+    }
+
+    td.num{
+        text-align: center;
+    }
+</style>
+<body>
+
+    <h1>Uso de tabelas grandes </h1>
+
+    <!--
+        Thead
+            td,td,th
+        Tbody
+            tr, td, th
+        Tfoot
+            tr, td, th
+
+    -->
+
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+
+            <tr>
+                <td>Minas gerais</td>
+                <td class="num">21.168.791</td>
+            </tr>
+
+            <tr>
+                <td>Rio de janeiro</td>
+                <td class="num">172.64.367</td>
+            </tr>
+
+            <tr>
+                <td>Acre</td>
+                <td class="num">881.935</td>
+            </tr>
+
+            <tr>
+                <td>Roraima</td>
+                <td class="num">605 761</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>Total de habitantes</th>
+                <td>***********</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
