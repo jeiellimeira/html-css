@@ -17,10 +17,13 @@
     }
     body{
         width: 500px;
+        border-collapse: collapse;
+        position: relative;
     }
 
     table{
         width: 500px;
+
     }
 
     td{
@@ -43,6 +46,11 @@
 
     thead{
         background-color: gray;
+    }
+
+    thead>tr>th {
+        position: sticky;
+        top: 0;
     }
 
     tbody tr:nth-child(2n){
