@@ -10,6 +10,8 @@
     table{
         width: 300px;
         border:1px solid black;
+        padding: 10px;
+        text-align: center;
     }
 
     td, td{
@@ -20,18 +22,23 @@
     <table>
         <tr>
             <td colspan="3">A</td>
-            <td colspan="3">B</td>
+            <td rowspan="4">B</td>
         </tr>
 
         <tr>
-            <td>C</td>
-            <td>d</td>
-            <td>e</td>
+            <td rowspan="5">C</td>
+            
             
         </tr>
 
         <tr>
+            <td>d</td>
+            <td>e</td>
             <td>f</td>
+        </tr>
+
+        <tr>
+            <td>g</td>
             <td>h</td>
             <td>i</td>
         </tr>
@@ -43,7 +50,7 @@
         </tr>
 
         <tr>
-            <td>N</td>
+            <td colspan="3" rowspan="3">N</td>
         </tr>
     </table>
     
