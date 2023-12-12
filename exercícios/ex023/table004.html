@@ -35,15 +35,15 @@
 
     <thead>
         <tr>
-            <th>Grupos</th>
-            <th>Nomes</th>
-            <th colspan="3">Filmes</th>
+            <th scope="col">Grupos</th>
+            <th scope="col">Nomes</th>
+            <th colspan="3" scope="colgroup">Filmes</th>
         </tr>
     </thead>
 
     <tbody>
         <tr>
-            <th rowspan="4">Mulheres</th>
+            <th rowspan="4" scope="rowgroup">Mulheres</th>
             <td>ana maria santos</td>
             <td>alien</td>
             <td>rambo</td>
@@ -71,7 +71,7 @@
             <td>chapolin</td>
         </tr>
         <tr>
-            <th rowspan="3">Homens</th>
+            <th rowspan="3" scope="rowgroup">Homens</th>
             <td>Bruno mendonça</td>
             <td>intocáveis</td>
             <td>Amnésia</td>
@@ -91,7 +91,10 @@
             <td>Taxi driver</td>
             <td>Toy story</td>
         </tr>
-
+    <tfoot>
+        <th colspan="4" scope="row">Total</th>
+        <td>1000</td>
+    </tfoot>
 
     </tbody>
  </table>
