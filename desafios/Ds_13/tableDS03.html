@@ -12,9 +12,17 @@
         border: 1px solid black;
     }
 
-    tr, td, th {
+    tr, td {
         border: 1px solid black;
         padding: 10px;
+    }
+
+    thead, th {
+        background-color: gray;
+    }
+
+    tr#m{
+        background-color: gray;
     }
 
 
@@ -25,8 +33,9 @@
             <td rowspan="3">Área</td>
             <td rowspan="3">Disciplinas</td>
             <th colspan="2" scope="rowgroup">notas</td>
-            <th scope="rowgroup">notas1</td>
-            <th scope="rowgroup">notas2</td>
+            
+                <th>notas1</td>
+            <th>notas2</td>
             <td rowspan="2">média</td>
         </thead>
 
@@ -62,6 +71,31 @@
           <td>0.0</td>
           <td>0.0</td>
         </tr>
+
+        <th colspan="6">média de Exatas</th>
+        <td id="m">0.0</td>
+<tr>
+        <td rowspan="2">humanas</td> 
+        <td colspan="2">historia</td>
+        <td></td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+</tr>
+
+<tr>
+        <td>Geografia</td>
+        <td colspan="2"></td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+</tr>
+
+<tr id="m">
+   <td colspan="6"> Média de humanas </td>
+   <td>0.0</td>
+</tr>
+
     </table>
     
 </body>
